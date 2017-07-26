@@ -1,7 +1,6 @@
- #!/bin/bash
-
-
-
+#!/bin/bash
+message='coucou'
+echo $message
 while(true); do
 
     # Current date
@@ -18,7 +17,7 @@ while(true); do
 
     # Send data to API
 
-    curl -XPOST -H "Content-Type: application/json" -d '{"ts":"'$d'", "type": "temp", "value": '$temp', "sensor_id": 123 }' http://localhost:1337/data
+    curl -XPOST -H "Content-Type: application/json" -d '{"ts":"'$d'", "type": "temp", "value": '$temp', "sensor_id": 123 }' http://192.168.1.15:1337/data
 
 
 
