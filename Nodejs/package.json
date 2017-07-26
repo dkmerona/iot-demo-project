@@ -5,8 +5,11 @@
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
-        "test": "mocha test/functional.js"
+        "test": "node test/functional.js"
     },
     "author": "jms",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "supertest": "^3.0.0"
+    }
 }
